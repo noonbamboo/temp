@@ -1,0 +1,192 @@
+.first {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/welcom1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.wctitle {
+    position: absolute;
+    width: 703px;
+    height: 240px;
+    display: inline-block;
+    left: 50%;
+    top: 72%;
+    transform: translate(-50%, -50%);
+}
+
+.wcbtn {
+    width: 129px;
+    height: 38px;
+    position: absolute;
+    right: 50px;
+    top: 25px;
+}
+
+.wcbtn img,
+.wcbtnl img {
+    width: 100%;
+    height: 100%;
+}
+
+.wcbtnl {
+    width: 280px;
+    position: absolute;
+    left: 49%;
+    top: 94%;
+    transform: translate(-50%, -50%);
+}
+
+#icon2 {
+    width: 111px;
+    height: 88px;
+    margin: 15px;
+}
+
+.second {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/activity.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.third {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/welcome-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.third_tile {
+    width: 442px;
+    height: 90px;
+}
+
+#wrap {
+    overflow: hidden;
+    position: relative;
+    width: 766px;
+    height: 551px;
+    z-index: 1;
+    margin: 30px 0px;
+    box-sizing: border-box;
+}
+
+#wrap .img-list {
+    display: flex;
+    position: relative;
+    left: 0px;
+    height: inherit;
+    transition: 0.5s ease;
+}
+
+#wrap .img-list .wrap_container {
+    width: 766px;
+    height: inherit;
+    display: flex;
+    flex-shrink: 0;
+    position: relative;
+}
+
+#wrap .img-list .wrap_container .wrap_content {
+    width: 743px;
+    height: 93.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/welcome_infrom_abg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16.8px;
+    left: 12px;
+}
+
+img.welcome_inform {
+    width: 737px;
+    height: 442px;
+}
+
+img.wrap_inform_border {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#wrap a {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+    width: 40px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    user-select: none;
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+    text-decoration: none;
+}
+
+a.left {
+    position: absolute;
+    width: 87px;
+    height: 87px;
+    left: 18%;
+    top: 52%;
+}
+
+a.right {
+    position: absolute;
+    width: 87px;
+    height: 87px;
+    right: 18%;
+    top: 52%;
+}
+
+a.left img,
+a.right img {
+    width: 100%;
+    height: 100%;
+}
+
+.circle-list {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 240px;
+    height: 40px;
+    z-index: 8;
+    display: none;
+}
+
+.circle-list>.circle {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #ecf0f1;
+    border-radius: 50%;
+}
+
+.circle-list>.circle.active {
+    background-color: #e74c3c;
+}

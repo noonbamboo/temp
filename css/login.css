@@ -1,0 +1,245 @@
+*{
+				margin: 0;
+				padding: 0;
+			}
+			@keyframes eyemove{
+				0%{
+					
+				}
+				90%{
+					height: 30px;
+				}
+				100%{
+					height: 4px;
+				}
+			}
+			@keyframes clothsmove{
+				25%{
+					transform: translate(300px,0px);
+				}
+				50%{
+					transform: translate(300px,300px);
+				}
+				75%{
+					transform: translate(0px,300px);
+				}
+				100%{
+					transform: translate(0px,0px);
+				}
+			}
+			@keyframes applemove{
+				25%{
+					transform: translate(0px,300px);
+				}
+				50%{
+					transform: translate(-300px,300px);
+				}
+				75%{
+					transform: translate(-300px,0px);
+				}
+				100%{
+					transform: translate(0px,0px);
+				}
+			}
+			@keyframes homemove{
+				25%{
+					transform: translate(-300px,0px);
+				}
+				50%{
+					transform: translate(-300px,-300px);
+				}
+				75%{
+					transform: translate(0px,-300px);
+				}
+				100%{
+					transform: translate(0px,0px);
+				}
+			}
+			@keyframes bikemove{
+				25%{
+					transform: translate(0px,-300px);
+				}
+				50%{
+					transform: translate(300px,-300px);
+				}
+				75%{
+					transform: translate(300px,0px);
+				}
+				100%{
+					transform: translate(0px,0px);
+				}
+			}
+			.bgbox{
+				height: 500px;
+				background: #333333;
+				position: relative;
+				top: 85px;
+			}
+			.loginbox{
+				width: 450px;
+    			height: 100%;
+				border: solid 2px #D0D0D0;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 60%;
+			}
+			.login{
+				width: 90%;
+				height: 100%;
+				background: white;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				
+			}
+			.cat img{
+				width: 50%;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				top: 6%;
+			}
+			.shuru{
+				width: 90%;
+				height: 70%;
+				background: white;
+				border: solid gray 2px;
+				border-radius: 20px;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				top: 20%;
+				perspective: 300px;
+			}
+			.text{
+				width: 250px;
+				height: 30px;
+				border: 2px #333333 solid;
+				border-radius: 10px;
+				outline: none;
+				text-align: center;
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+			.tet1{
+				top: 30%;
+			}
+			.tex2{
+				top: 60%;
+			}
+			.wtext{
+				height: 30px;
+				text-align: center;
+				position: absolute;
+				left: 8%;
+				transform: translate(-50%,-50%);
+			}
+			.wtext1{
+				top: 31%;
+			}
+			.wtext2{
+				top: 61%;
+			}
+			.an{
+				width: 100px;
+				height: 40px;
+				border: 2px #333333 solid;
+				background: #333333;
+				color: white;
+				border-radius: 10px;
+				position: absolute;
+				left: 133.24px;
+				top: 75%;
+				transition: all 0.5s;
+
+			}
+			button:hover{
+				opacity: 0.6;
+				transform: rotateX(15deg);
+			}
+			.super{
+				text-decoration: none;
+				color: cornflowerblue;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				top: 90%;
+			}
+			.cateyes{
+				height: 30px;
+				width: 15px;
+				background: #333333;
+				position: absolute;
+				transform: translate(-50%,-50%);
+				top: 19%;
+				border-radius: 50% 50% 0 0;
+				animation: eyemove 2s ease-in-out infinite alternate;
+			}
+			.cateye1{
+				left: 37%;
+			}
+			.cateye2{
+				right: 33%;
+			}
+			.showbox{
+				width: 450px;
+				height: 450px;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				
+				left: 10%;
+			}
+			.item img{
+				width: 150px;
+				height: 150px;
+				position: absolute;
+				transition: all 0.5s;
+			}
+			.itemcloths{
+				position: absolute;
+				animation: clothsmove 4s infinite;
+			}
+			.itemapple{
+				position: absolute;
+				left: 300px;
+				animation: applemove 4s infinite;
+			}
+			.itemhome{
+				position: absolute;
+				left: 300px;
+				top: 300px;
+				animation: homemove 4s infinite;
+			}
+			.itembike{
+				position: absolute;
+				top: 300px;
+				animation: bikemove 4s infinite;
+			}
+			.itemshop{
+				position: absolute;
+				left: 150px;
+				top: 150px;
+			}
+			.itemapple img:hover{
+				opacity: 0.6;
+				transform: rotateY(360deg);
+			}
+			.itembike img:hover{
+				opacity: 0.6;
+				transform: rotateY(360deg);
+			}.itemcloths img:hover{
+				opacity: 0.6;
+				transform: rotateY(360deg);
+			}.itemhome img:hover{
+				opacity: 0.6;
+				transform: rotateY(360deg);
+			}
+			.itemshop img:hover{
+				transform: rotateY(360deg);
+			}
+			body{
+				background: #d0d0d080;
+			}

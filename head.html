@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="./css/betterbtn.css">
+    <link rel="stylesheet" href="./css/inputtext.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo"></div>
+        <div class="header__navwrap">
+            <!-- 设置指示条 -->
+            <div class="nav_item_pointbar"></div>
+            <!-- 设置导航元素 -->
+            <a href="./head.html" class="header__navitem header__navitem--focus">首&nbsp;页</a>
+            <a href="./news.html" class="header__navitem">新&nbsp;闻</a>
+            <a href="#" class="header__navitem">角&nbsp;色</a>
+            <a href="#" class="header__navitem">世&nbsp;界</a>
+            <a href="#" class="header__navitem">漫&nbsp;画</a>
+            <a href="#" class="header__navitem">社&nbsp;区</a>
+        </div>
+        <a href="#" class="header__navitem_login" style="float: right;" id="login_btn">登录</a>
+    </div>
+    <div id="view">
+        <div id="container-block">
+            <div class="container container1">
+                <!--第一页内容-->
+                <video id="video1" width="1475px" loop="loop" muted="muted">
+                    <source src="./img/3e78e80.mp4" type="audio/mp4">
+                    "不支持视频播放"
+                </video>
+                <div class="download">
+                    <div class="download-ewm">
+                        <img src="./img/下载ewm.png" alt="" width="102px" style="position: absolute;">
+                        <img src="./img/paimeng.jpg" width="30px" style="z-index: 1;">
+                    </div>
+                    <div class="download-btn-group">
+                        <a href="#" class="download-btn">
+                            <img src="./img/下载ps.png">
+                        </a>
+                        <a href="#" class="download-btn">
+                            <img src="./img/下载apple.png">
+                        </a>
+                    </div>
+                    <div class="download-btn-group">
+                        <a href="#" class="download-btn">
+                            <img src="./img/下载tap.png">
+                        </a>
+                        <a href="#" class="download-btn">
+                            <img src="./img/下载az.png">
+                        </a>
+                    </div>
+                    <a href="#" class="download-btn-lage">
+                        <img src="./img/下载pc.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 设置登录框 -->
+    <div class="login_container">
+        <div class="login_container_content">
+            <div class="login_body">
+                <img src="./img/mhyicon.png" alt="" class="logo">
+                <img src="./img/closeicon.png" alt="" class="closeicon">
+                <p class="login_ways">账号登录</p>
+                <div class="inputbox">
+                    <input type="text" class="login" id="user" required>
+                    <div class="underline"></div>
+                    <label for="user" class="login-label">用户名</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" class="login" id="user" required>
+                    <div class="underline"></div>
+                    <label for="user" class="login-label">密码</label>
+                </div>
+                <div class="betterbtn">
+                    <a href="#" class="btn">登录</a>
+                </div>
+                <div class="register-bar">
+                    <a href="https://user.mihoyo.com/#/findAccountGuide" target="_blank">登录遇到问题？</a>
+                    <a href="./zhuce.html" class="to-register">立即注册</a>
+                </div>
+                <p class="login-tip"><span>未注册的手机验证后将自动登录。注册/登录即代表您同意并遵守</span> <a target="_blank" href="https://user.mihoyo.com/#/agreement?hideBack=true">《米哈游通行证用户服务协议》</a> <a target="_blank" href="https://user.mihoyo.com/#/privacyAgreement?hideBack=true">《米哈游通行证用户个人信息及隐私保护政策》</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var video1 = document.getElementById("video1");
+    video1.play();
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="./js/head.js"></script>
+<script src="./js/loginboxcontrl.js"></script>
+<script src="./js/navpointbar.js"></script>
+
+</html>

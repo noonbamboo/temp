@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.inputbox {
+    position: relative;
+    height: 70px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.inputbox>.login {
+    box-sizing: border-box;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    position: absolute;
+    bottom: 0px;
+    transition: .3s;
+    font-size: 15px;
+}
+
+.inputbox>.login:focus {
+    outline: none;
+    border-bottom: 2px solid #2AAEFA;
+}
+
+.inputbox>.login-label {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    color: #777;
+    pointer-events: none;
+    transition: .3s ease-in;
+}
+
+.inputbox>.login:valid~.login-label,
+.inputbox>.login:focus~.login-label {
+    color: #2AAEFA;
+    transform: translatey(-130%);
+    font-size: 18px;
+}
+
+.inputbox>.underline {
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 300px;
+    background-color: #2AAEFA;
+    transform: scalex(0);
+    transition: .5s;
+}
+
+.inputbox>.login:valid~.underline,
+.inputbox>.login:focus~.underline {
+    transform: scalex(1);
+}

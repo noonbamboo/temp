@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.betterbtn>.btn {
+    width: 100px;
+    height: 35px;
+    color: #000;
+    border: 3px solid rgba(23, 35, 50, 0.794);
+    font-size: inherit;
+    display: block;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+    z-index: 1;
+    transition: .8s;
+}
+
+.betterbtn>.btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: inherit;
+    top: -3px;
+    left: -3px;
+    height: 0;
+    background: rgba(23, 35, 50, 0.753);
+    z-index: -1;
+    transition: .8s;
+    border-radius: 0 0 50% 50%;
+}
+
+.betterbtn>.btn:hover::before {
+    height: 200%;
+}
+
+.betterbtn>.btn:hover {
+    color: #eee;
+}
